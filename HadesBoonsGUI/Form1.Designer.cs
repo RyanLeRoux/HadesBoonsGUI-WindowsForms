@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.txtBox1 = new System.Windows.Forms.TextBox();
             this.AphroditeButton = new System.Windows.Forms.Button();
             this.AresButton = new System.Windows.Forms.Button();
@@ -330,6 +330,7 @@
             // 
             this.grpBox1.Controls.Add(this.txtBox1);
             this.grpBox1.Controls.Add(this.smallpBox1);
+            this.grpBox1.Font = new System.Drawing.Font("Aileron", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBox1.Location = new System.Drawing.Point(12, 70);
             this.grpBox1.Name = "grpBox1";
             this.grpBox1.Size = new System.Drawing.Size(442, 119);
@@ -405,27 +406,27 @@
             // 
             // DuoLegChart
             // 
-            chartArea4.AxisX.MajorGrid.Enabled = false;
-            chartArea4.AxisY.Interval = 1D;
-            chartArea4.AxisY.MajorGrid.Enabled = false;
-            chartArea4.AxisY.MajorGrid.Interval = 1D;
-            chartArea4.AxisY.MajorGrid.IntervalOffset = 1D;
-            chartArea4.AxisY.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea4.AxisY.MajorTickMark.Interval = 1D;
-            chartArea4.AxisY.MajorTickMark.IntervalOffset = 1D;
-            chartArea4.AxisY.MajorTickMark.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea4.AxisY.Maximum = 7D;
-            chartArea4.AxisY.MinorGrid.Interval = 1D;
-            chartArea4.AxisY.MinorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea4.Name = "ChartArea1";
-            this.DuoLegChart.ChartAreas.Add(chartArea4);
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.AxisY.Interval = 1D;
+            chartArea1.AxisY.MajorGrid.Enabled = false;
+            chartArea1.AxisY.MajorGrid.Interval = 1D;
+            chartArea1.AxisY.MajorGrid.IntervalOffset = 1D;
+            chartArea1.AxisY.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea1.AxisY.MajorTickMark.Interval = 1D;
+            chartArea1.AxisY.MajorTickMark.IntervalOffset = 1D;
+            chartArea1.AxisY.MajorTickMark.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea1.AxisY.Maximum = 7D;
+            chartArea1.AxisY.MinorGrid.Interval = 1D;
+            chartArea1.AxisY.MinorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea1.Name = "ChartArea1";
+            this.DuoLegChart.ChartAreas.Add(chartArea1);
             this.DuoLegChart.Location = new System.Drawing.Point(474, 12);
             this.DuoLegChart.Name = "DuoLegChart";
-            series4.ChartArea = "ChartArea1";
-            series4.Name = "SkillFrequency";
-            series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.String;
-            series4.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
-            this.DuoLegChart.Series.Add(series4);
+            series1.ChartArea = "ChartArea1";
+            series1.Name = "SkillFrequency";
+            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.String;
+            series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
+            this.DuoLegChart.Series.Add(series1);
             this.DuoLegChart.Size = new System.Drawing.Size(482, 296);
             this.DuoLegChart.TabIndex = 30;
             this.DuoLegChart.Text = "Duo Legendary Frequency";
