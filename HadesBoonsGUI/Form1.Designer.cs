@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtBox1 = new System.Windows.Forms.TextBox();
             this.AphroditeButton = new System.Windows.Forms.Button();
             this.AresButton = new System.Windows.Forms.Button();
@@ -474,6 +475,8 @@
             this.Controls.Add(this.AphroditeButton);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.grpBoxPrereq);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "HadesBoons";
             this.Load += new System.EventHandler(this.Form1_Load);
