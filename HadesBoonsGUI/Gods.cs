@@ -15,7 +15,7 @@ namespace HadesBoonsGUI
         public string[] Skills { get; }
         public bool[][] Duos { get; }
         public bool[] Legendary { get; }
-        public bool CanGetLegendary { get; } // Checks whether God is able to get a legendary
+        public bool CanGetLegendary { get; set;  } // Checks whether God is able to get a legendary
         public string[] LegPreqs { get; }
         public string[] PlainSkills
         {
@@ -205,15 +205,16 @@ namespace HadesBoonsGUI
                     },
                     new bool[6]
                 {
-                    true, true, true, true, true, false
+                    false, false, false, false, false, false
                 },
-                    new string[5]
+                    new string[6]
                     {
                       "Exit Wounds",
                       "Hide Breaker",
                       "Hunter's Mark",
                       "Clean Kill",
-                      "Support Fire"
+                      "Support Fire",
+                      "Pressure Points"
                     }),
 
                 // Athena
@@ -241,7 +242,7 @@ namespace HadesBoonsGUI
                     },
                     new bool[6]
                     {
-                        true, true, false, true, false, true
+                        true, true, false, true, false, false
                     },
                     new string[1]
                     {
@@ -309,11 +310,13 @@ namespace HadesBoonsGUI
                     {
                         true, true, true, true, true, false
                     },
-                    new string[3]
+                    new string[2]
                     {
-                        "Peer Pressure",
-                        "Bad Influence",
-                        "Numbing Sensation"
+                        "Trippy Shot",
+                        "Any Other Skill Upgrade"
+                        //"Peer Pressure",
+                        //"Bad Influence",
+                        //"Numbing Sensation"
                     }),
 
                 // Poseidon
@@ -343,9 +346,8 @@ namespace HadesBoonsGUI
                     {
                         true, true, true, true, true, false
                     },
-                    new string[3]
+                    new string[2]
                     {
-                        "Razor Shoals",
                        "Breaking Wave",
                        "Typhoon's Fury"
                     }),

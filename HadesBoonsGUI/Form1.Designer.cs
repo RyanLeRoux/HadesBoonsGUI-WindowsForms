@@ -97,6 +97,8 @@
             // 
             // AphroditeButton
             // 
+            this.AphroditeButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.AphroditeButton.Font = new System.Drawing.Font("Aileron", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AphroditeButton.Location = new System.Drawing.Point(12, 12);
             this.AphroditeButton.Name = "AphroditeButton";
             this.AphroditeButton.Size = new System.Drawing.Size(75, 23);
@@ -107,6 +109,8 @@
             // 
             // AresButton
             // 
+            this.AresButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.AresButton.Font = new System.Drawing.Font("Aileron", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AresButton.Location = new System.Drawing.Point(93, 12);
             this.AresButton.Name = "AresButton";
             this.AresButton.Size = new System.Drawing.Size(75, 23);
@@ -117,6 +121,8 @@
             // 
             // ArtemisButton
             // 
+            this.ArtemisButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.ArtemisButton.Font = new System.Drawing.Font("Aileron", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ArtemisButton.Location = new System.Drawing.Point(174, 12);
             this.ArtemisButton.Name = "ArtemisButton";
             this.ArtemisButton.Size = new System.Drawing.Size(75, 23);
@@ -127,6 +133,8 @@
             // 
             // AthenaButton
             // 
+            this.AthenaButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.AthenaButton.Font = new System.Drawing.Font("Aileron", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AthenaButton.Location = new System.Drawing.Point(255, 12);
             this.AthenaButton.Name = "AthenaButton";
             this.AthenaButton.Size = new System.Drawing.Size(75, 23);
@@ -137,6 +145,8 @@
             // 
             // DemeterButton
             // 
+            this.DemeterButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.DemeterButton.Font = new System.Drawing.Font("Aileron", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DemeterButton.Location = new System.Drawing.Point(12, 41);
             this.DemeterButton.Name = "DemeterButton";
             this.DemeterButton.Size = new System.Drawing.Size(75, 23);
@@ -147,6 +157,8 @@
             // 
             // DionysusButton
             // 
+            this.DionysusButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.DionysusButton.Font = new System.Drawing.Font("Aileron", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DionysusButton.Location = new System.Drawing.Point(93, 41);
             this.DionysusButton.Name = "DionysusButton";
             this.DionysusButton.Size = new System.Drawing.Size(75, 23);
@@ -157,6 +169,8 @@
             // 
             // PoseidonButton
             // 
+            this.PoseidonButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.PoseidonButton.Font = new System.Drawing.Font("Aileron", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PoseidonButton.Location = new System.Drawing.Point(174, 41);
             this.PoseidonButton.Name = "PoseidonButton";
             this.PoseidonButton.Size = new System.Drawing.Size(75, 23);
@@ -167,6 +181,8 @@
             // 
             // ZeusButton
             // 
+            this.ZeusButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.ZeusButton.Font = new System.Drawing.Font("Aileron", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ZeusButton.Location = new System.Drawing.Point(255, 41);
             this.ZeusButton.Name = "ZeusButton";
             this.ZeusButton.Size = new System.Drawing.Size(75, 23);
@@ -331,7 +347,7 @@
             // 
             this.grpBox1.Controls.Add(this.txtBox1);
             this.grpBox1.Controls.Add(this.smallpBox1);
-            this.grpBox1.Font = new System.Drawing.Font("Aileron", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpBox1.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBox1.Location = new System.Drawing.Point(12, 70);
             this.grpBox1.Name = "grpBox1";
             this.grpBox1.Size = new System.Drawing.Size(442, 119);
@@ -343,6 +359,7 @@
             // 
             this.grpBox2.Controls.Add(this.txtBox2);
             this.grpBox2.Controls.Add(this.smallpBox2);
+            this.grpBox2.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBox2.Location = new System.Drawing.Point(12, 189);
             this.grpBox2.Name = "grpBox2";
             this.grpBox2.Size = new System.Drawing.Size(442, 119);
@@ -354,6 +371,7 @@
             // 
             this.grpBox3.Controls.Add(this.txtBox3);
             this.grpBox3.Controls.Add(this.smallpBox3);
+            this.grpBox3.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBox3.Location = new System.Drawing.Point(12, 306);
             this.grpBox3.Name = "grpBox3";
             this.grpBox3.Size = new System.Drawing.Size(442, 119);
@@ -365,6 +383,7 @@
             // 
             this.grpBox4.Controls.Add(this.txtBox4);
             this.grpBox4.Controls.Add(this.smallpBox4);
+            this.grpBox4.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBox4.Location = new System.Drawing.Point(12, 425);
             this.grpBox4.Name = "grpBox4";
             this.grpBox4.Size = new System.Drawing.Size(442, 119);
@@ -376,6 +395,7 @@
             // 
             this.grpBox5.Controls.Add(this.txtBox5);
             this.grpBox5.Controls.Add(this.smallpBox5);
+            this.grpBox5.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBox5.Location = new System.Drawing.Point(12, 544);
             this.grpBox5.Name = "grpBox5";
             this.grpBox5.Size = new System.Drawing.Size(442, 119);
@@ -387,6 +407,7 @@
             // 
             this.grpBox6.Controls.Add(this.txtBox6);
             this.grpBox6.Controls.Add(this.smallpBox6);
+            this.grpBox6.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBox6.Location = new System.Drawing.Point(12, 663);
             this.grpBox6.Name = "grpBox6";
             this.grpBox6.Size = new System.Drawing.Size(442, 119);
@@ -398,6 +419,7 @@
             // 
             this.grpBox7.Controls.Add(this.txtBox7);
             this.grpBox7.Controls.Add(this.smallpBox7);
+            this.grpBox7.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBox7.Location = new System.Drawing.Point(12, 782);
             this.grpBox7.Name = "grpBox7";
             this.grpBox7.Size = new System.Drawing.Size(442, 119);
@@ -434,17 +456,21 @@
             // 
             // txtBoxPrereq
             // 
+            this.txtBoxPrereq.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxPrereq.Font = new System.Drawing.Font("Aileron", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxPrereq.Location = new System.Drawing.Point(6, 19);
             this.txtBoxPrereq.Multiline = true;
             this.txtBoxPrereq.Name = "txtBoxPrereq";
             this.txtBoxPrereq.ReadOnly = true;
+            this.txtBoxPrereq.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtBoxPrereq.Size = new System.Drawing.Size(470, 92);
             this.txtBoxPrereq.TabIndex = 31;
+            this.txtBoxPrereq.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // grpBoxPrereq
             // 
             this.grpBoxPrereq.Controls.Add(this.txtBoxPrereq);
+            this.grpBoxPrereq.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxPrereq.Location = new System.Drawing.Point(474, 314);
             this.grpBoxPrereq.Name = "grpBoxPrereq";
             this.grpBoxPrereq.Size = new System.Drawing.Size(482, 121);
