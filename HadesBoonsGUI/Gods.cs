@@ -207,12 +207,12 @@ namespace HadesBoonsGUI
                 {
                     false, false, false, false, false, false
                 },
-                    new string[6]
+                    new string[3]
                     {
                       "Exit Wounds",
-                      "Hide Breaker",
-                      "Hunter's Mark",
-                      "Clean Kill",
+                      //"Hide Breaker",
+                      //"Hunter's Mark",
+                      //"Clean Kill",
                       "Support Fire",
                       "Pressure Points"
                     }),
