@@ -8,7 +8,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace HadesBoonsGUI
 {
-    internal class Gods
+    public class Gods
     {
         public string Name { get; }
         public int Index { get; }
@@ -17,6 +17,11 @@ namespace HadesBoonsGUI
         public bool[] Legendary { get; }
         public bool CanGetLegendary { get; set;  } // Checks whether God is able to get a legendary
         public string[] LegPreqs { get; }
+        public string[] DuoName { get; }
+        public string[] DuoDescription { get; }
+        public bool[] ChosenSkills { get; set; } = new bool[] {
+            false, false, false, false, false, false
+        };
         public string[] PlainSkills
         {
             get
@@ -41,7 +46,9 @@ namespace HadesBoonsGUI
             string[] skills,
             bool[][] duos,
             bool[] legendary,
-            string[] legPreqs)
+            string[] legPreqs,
+            string[] duoName,
+            string[] duoDescription)
         {
             Name = name;
             Index = index;
@@ -49,6 +56,8 @@ namespace HadesBoonsGUI
             Duos = duos;
             Legendary = legendary;
             LegPreqs = legPreqs;
+            DuoName = duoName;
+            DuoDescription = duoDescription;
         }
 
         public string DuoSkillComb(int i, int j)
@@ -64,13 +73,25 @@ namespace HadesBoonsGUI
         public bool GodDuoNull(int i)
         {
             if (this.Duos[i] == null)
-            {
-                return false;
-            }
+            { return false; }
             else
-            {
-                return true;
-            }
+            { return true; }
+        }
+
+        public bool GodDuoNameNull(int i)
+        {
+            if (this.DuoName[i] == null)
+            { return false; }
+            else
+            { return true; }
+        }
+
+        public bool GodDuoDescriptionNull(int i)
+        {
+            if (this.DuoDescription[i] == null)
+            { return false; }
+            else
+            { return true; }
         }
 
         public int SkillFrequencyCount(int skill)
@@ -81,9 +102,7 @@ namespace HadesBoonsGUI
                 if (this.GodDuoNull(i))
                 {
                     if (this.Duos[i][skill])
-                    {
-                        count++;
-                    }
+                    { count++; }
                 }
             }
             return count;
@@ -145,6 +164,31 @@ namespace HadesBoonsGUI
                         "Empty Inside",
                         "Sweet Surrender",
                         "Broken Resolve"
+                    },
+                    new string[8]
+                    {
+                        null,      // self
+                        "Curse of Longing",     // Ares
+                        "Heart Rend",     // Artemis
+                        "Parting Shot",      // Athena
+                        "Cold Embrace",     // Demeter
+                        "Low Tolerance",     // Dionysus
+                        "Sweet Nectar",      // Poseidon
+                        "Smoldering Air"       // Zeus
+                    },
+                    new string[8]
+                    {
+                        null,                                                                         // self
+                        "Your Doom effects continuously strike Weak foes.",                           // Ares
+                        "Your Critical effects deal even more damage to Weak foes. ",                 // Artemis
+                        "Your Cast gains any bonuses you have for striking foes from behind.\r\n\r\n" +
+                        "Cannot be combined with Trippy Shot",                                        // Athena
+                        "Your Cast crystal fires its beam directly at you for +4 seconds. \r\n\r\n" +
+                        "Cannot be combined with Crystal Clarity or Beowulf",                         // Demeter
+                        "Your Hangover effects stack even more times against Weak foes. ",            // Dionysus
+                        "Any Poms of Power you find are more effective. ",                            // Poseidon
+                        "Your Call charges up automatically, but is capped at 25%.\r\n\r\n" +
+                        "Cannot be combined with Sigil of the Dead",                                  // Zeus
                     }),
 
                 // Ares
@@ -178,35 +222,60 @@ namespace HadesBoonsGUI
                     {
                         "Black Metal",
                         "Engulfing Vortex"
+                    },
+                    new string[8]
+                    {
+                        null,                 // Aphrodite
+                        null,                 // self
+                        "Hunting Blades",     // Artemis
+                        "Merciful End",       // Athena
+                        "Freezing Vortex",    // Demeter
+                        "Curse of Nausea",    // Dionysus
+                        "Curse of Drowning",  // Poseidon
+                        "Vengeful Mood"       // Zeus
+                    },
+                    new string[8]
+                    {
+                        null,                                                                    // Aphrodite
+                        null,                                                                    // Self
+                        "Your Cast creates a faster Blade Rift that seeks the nearest foe.\r\n\r\n"+
+                        "Cannot be combined with Freezing Vortex or Beowulf",                    // Artemis
+                        "Your attacks that can Deflect immediately activate Doom effects. ",     // Athena
+                        "Your Cast inflicts Chill, but is smaller and moves slower.\r\n\r\n" +
+                        "Cannot be combined with Hunting Blades",                                // Demeter
+                        "Your Hangover effects deal damage faster. ",                            // Dionysus
+                        "Your Cast is a pulse that deals damage to foes around you.\r\n\r\n" +
+                        "Cannot be combined with Mirage Shot, Blizzard Shot or Hera",            // Poseidon
+                        "Your Revenge attacks sometimes occur without taking damage. "           // Zeus
                     }),
 
                 // Artemis
                 new Gods(
                     "Artemis", 2,
                     new string[6]
-                {
-                    "Deadly Strike",
-                    "Deadly Flourish",
-                    "True Shot",
-                    "Hunter Dash",
-                    "Artemis' Aid",
-                    ""
-                },
+                    {
+                        "Deadly Strike",
+                        "Deadly Flourish",
+                        "True Shot",
+                        "Hunter Dash",
+                        "Artemis' Aid",
+                        ""
+                    },
                     new bool[][]
                     {
                         new bool[] {true, true, true, false, false, false },   // Aphrodite
                         new bool[] {true, true, false, true, true, false },    // Ares
                         null,                                                  // Self
-                        new bool [] { true, true, true, false, true, false },   // Athena
+                        new bool [] { true, true, true, false, true, false },  // Athena
                         new bool [] { true, true, false, true, true, false },  // Demeter
                         new bool [] { true, true, true, false, true, false },  // Dionysus
                         new bool [] { true, true, true, false, true, false },  // Poseidon
                         new bool [] { true, true, true, true, true, false },   // Zeus
                     },
                     new bool[6]
-                {
-                    false, false, false, false, false, false
-                },
+                    {
+                        false, false, false, false, false, false
+                    },
                     new string[3]
                     {
                       "Exit Wounds",
@@ -215,6 +284,31 @@ namespace HadesBoonsGUI
                       //"Clean Kill",
                       "Support Fire",
                       "Pressure Points"
+                    },
+                    new string[8]
+                    {
+                        null,                 // Aphrodite
+                        null,                 // Ares
+                        null,                 // self
+                        "Deadly Reversal",    // Athena
+                        "Crystal Clarity",    // Demeter
+                        "Splitting Headache", // Dionysus
+                        "Mirage Shot",        // Poseidon
+                        "Lightning Rod"       // Zeus
+                    },
+                    new string[8]
+                    {
+                        null,                                                                            // Aphrodite
+                        null,                                                                            // Ares
+                        null,                                                                            // Self
+                        "After you Deflect, briefly gain +20% chance to deal Critical damage. ",         // Athena
+                        "Your Cast is stronger and tracks foes more effectively.\r\n\r\n" +
+                        "Cannot be combined with Cold Embrace or Beowulf",                               // Demeter
+                        "Hangover-afflicted foes are more likely to take Critical damage. ",             // Dionysus
+                        "Your Cast fires a second projectile, though it has reduced damage.\r\n\r\n" +
+                        "Cannot be combined with Curse of Drowning",                                      // Poseidon
+                        "Your collectible Cast Ammo strike nearby foes with lightning every 1 Sec.\r\n\r\n" +
+                        "Requires the Infernal Soul Mirror Ability",                                      // Zeus
                     }),
 
                 // Athena
@@ -247,7 +341,30 @@ namespace HadesBoonsGUI
                     new string[1]
                     {
                         "Brilliant Riposte"
-                    }),
+                    },
+                    new string[8]
+                    {
+                        null,     // Aphrodite
+                        null,     // Ares
+                        null,     // Artemis
+                        null,      // self
+                        "Stubborn Roots",     // Demeter
+                        "Calculated Risk",     // Dionysus
+                        "Unshakable Mettle",      // Poseidon
+                        "Lightning Phalanx"       // Zeus
+                    },
+                    new string[8]
+                    {
+                        null,                                                                     // Aphrodite
+                        null,                                                                     // Ares
+                        null,                                                                     // Artemis
+                        null,                                                                     // self
+                        "While you have no Death/Stubborn Defiance your Health slowly recovers.", // Demeter
+                        "Your foes' ranged-attack projectiles are slower. ",                      // Dionysus
+                        "You cannot be stunned, and resist some damage from Bosses. ",            // Poseidon
+                        "Your Phalanx Shot Cast bounces between nearby foes. "                    // Zeus
+                    }
+                    ),
 
                 // Demeter
                 new Gods(
@@ -281,6 +398,31 @@ namespace HadesBoonsGUI
                         "Ravenous Will",
                         "Arctic Blast",
                         "Killing Freeze"
+                    },
+                    new string[8]
+                    {
+                        null,     // Aphrodite
+                        null,     // Ares
+                        null,     // Artemis
+                        null,      // Athena
+                        null,     // self
+                        "Ice Wine",     // Dionysus
+                        "Blizzard Shot",      // Poseidon
+                        "Cold Fusion"       // Zeus
+                    },
+                    new string[8]
+                    {
+                        null,                                                                        // Aphrodite
+                        null,                                                                        // Ares
+                        null,                                                                        // Artemis
+                        null,                                                                        // Athena
+                        null,                                                                        // self
+                        "Your Cast blasts an area with freezing Festive Fog that inflicts Chill.\r\n\r\n" +
+                        "Cannot be combined with Blizzard Shot",                                     // Dionysus
+                        "Your Cast moves slowly, piercing foes and firing shards around it.\r\n\r\n" +
+                        "Cannot be combined with Curse of Drowning, Ice Wine or Beowulf",            // Poseidon
+                        "Jolted status does not expire on your enemies' attacks.\r\n\r\n" +
+                        "Requires Static Discharge"                                                  // Zeus
                     }),
 
                 // Dionysus
@@ -317,6 +459,28 @@ namespace HadesBoonsGUI
                         //"Peer Pressure",
                         //"Bad Influence",
                         //"Numbing Sensation"
+                    },
+                    new string[8]
+                    {
+                        null,     // Aphrodite
+                        null,     // Ares
+                        null,     // Artemis
+                        null,      // Athena
+                        null,     // Demeter
+                        null,     // self
+                        "Exclusive Access",      // Poseidon
+                        "Scintillating Feast"       // Zeus
+                    },
+                    new string[8]
+                    {
+                        null,                                                                // Aphrodite
+                        null,                                                                // Ares
+                        null,                                                                // Artemis
+                        null,                                                                // Athena
+                        null,                                                                // Demeter
+                        null,                                                                // self
+                        "Any Boons you find have superior effects.",                         // Poseidon
+                        "Your Festive Fog effects also deal lightning damage periodically. " // Zeus
                     }),
 
                 // Poseidon
@@ -350,6 +514,28 @@ namespace HadesBoonsGUI
                     {
                        "Breaking Wave",
                        "Typhoon's Fury"
+                    },
+                    new string[8]
+                    {
+                        null,     // Aphrodite
+                        null,     // Ares
+                        null,     // Artemis
+                        null,      // Athena
+                        null,     // Demeter
+                        null,     // Dionysus
+                        null,      // self
+                        "Sea Storm"       // Zeus
+                    },
+                    new string [8]
+                    {
+                        null,                                                                 // Aphrodite
+                        null,                                                                 // Ares
+                        null,                                                                 // Artemis
+                        null,                                                                 // Athena
+                        null,                                                                 // Demeter
+                        null,                                                                 // Dionysus
+                        null,                                                                 // self
+                        "Your knock-away effects also cause foes to be struck by lightning. " // Zeus
                     }),
 
                 // Zeus
@@ -374,7 +560,6 @@ namespace HadesBoonsGUI
                         new bool[] { true, true, false, true, true, false },     // Dionysus
                         new bool[] { true, true, true, true, true, false },      // Poseidon
                         null                                                     // self
-
                     },
                     new bool[6]
                     {
@@ -385,6 +570,28 @@ namespace HadesBoonsGUI
                         "Storm Lightning",
                         "High Voltage",
                         "Double Strike"
+                    },
+                    new string[8]
+                    {
+                        null,     // Aphrodite
+                        null,     // Ares
+                        null,     // Artemis
+                        null,      // Athena
+                        null,     // Demeter
+                        null,     // Dionysus
+                        null,      // Poseidon
+                        null       // self
+                    },
+                    new string[8]
+                    {
+                        null,      // Aphrodite
+                        null,      // Ares
+                        null,      // Artemis
+                        null,     // Athena
+                        null, // Demeter
+                        null,     // Dionysus
+                        null,      // Poseidon
+                        null                                                     // self
                     })
             };
             return GodList;

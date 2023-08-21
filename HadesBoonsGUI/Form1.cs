@@ -20,7 +20,6 @@ namespace HadesBoonsGUI
         public Form1()
         {
             InitializeComponent();
-
             ButtonControl();
         }
 
@@ -44,6 +43,7 @@ namespace HadesBoonsGUI
 
             // Control the group box names
             TxtControl(GodList, inp);
+            TxtLegControl(GodList, inp); 
             GrpBoxControl(GodList, inp);
 
             // Control the images displayed
@@ -59,9 +59,9 @@ namespace HadesBoonsGUI
             int[] counts = SkillFrequencyCounts(GodList, inp);
 
             DuoLegChart.Series["SkillFrequency"].Points.Clear();
-            for (int i = 0; i < God.SkillNames.Length; i++)
+            for (int i = 0; i < God.Skills.Length; i++)
             {
-                DuoLegChart.Series["SkillFrequency"].Points.AddXY(God.SkillNames[i], counts[i]);
+                DuoLegChart.Series["SkillFrequency"].Points.AddXY(God.SkillNames[i] + "\r\n" + God.Skills[i], counts[i]);
                 God.LegFrequencyColor(i, DuoLegChart);
             }
         }
@@ -119,7 +119,45 @@ namespace HadesBoonsGUI
                 txtBoxes[i].Text = GodStringOutput(inp, GodList)[i];
             }
 
+            // LegPreqs is a string array, merge all strings together and print on new line
             txtBoxPrereq.Text = String.Join(Environment.NewLine, GodList[inp].LegPreqs);
+        }
+
+        private void TxtLegControl(List<Gods> GodList, int inp)
+        {
+            List<TextBox> txtLegBoxes = new List<TextBox>()
+            {
+                textBoxLeg1, textBoxLeg2, textBoxLeg3, textBoxLeg4, textBoxLeg5, textBoxLeg6, textBoxLeg7
+            };
+
+            for (int i = 0; i < txtLegBoxes.Count; i++)
+            {
+                txtLegBoxes[i].Text = DuoDescriptionCombo(GodList, inp)[i];
+            }
+        }
+
+        private static string[] DuoDescriptionCombo(List<Gods> GodList, int inp)
+        {
+            List<string> stringList = new List<string>();
+            Gods God = GodList[inp]; // Selected god
+            for (int i = 0; i < GodList.Count; i++)
+            {
+                //stringsList1.Clear();
+                Gods itGod = GodList[i]; // Iterate over other gods
+                if (inp != i)
+                {
+                    if (God.GodDuoDescriptionNull(i))
+                    {
+                        stringList.Add(God.DuoDescription[i]);
+                    }
+                    else
+                    {
+                        stringList.Add(itGod.DuoDescription[inp]);
+                    }
+                }
+            }
+            string[] stringArray = stringList.ToArray();
+            return stringArray;
         }
 
         private static List<Gods> UnselectedGods(List<Gods> GodList, int inp)
@@ -143,10 +181,23 @@ namespace HadesBoonsGUI
             for (int i = 0; i < GodList.Count; i++)
             {
                 Gods itGod = GodList[i]; // Iterate over other gods
+                if (inp != i)
+                {
+                    if (God.GodDuoDescriptionNull(i))
+                    {
+                        stringList.Add(God.DuoName[i]);
+                    }
+                    else
+                    {
+                        stringList.Add(itGod.DuoName[inp]);
+                    }
+                }
+                /*
                 if (God.GodDuoNull(i)) //(God.Duos[i] != null)
                 {
                     stringList.Add(God.Name + " - " + itGod.Name);
                 }
+                */
             }
             return stringList.ToArray();
         }
@@ -160,7 +211,7 @@ namespace HadesBoonsGUI
             {
                 stringsList1.Clear();
                 Gods itGod = GodList[i]; // Iterate over other gods
-                if (God.GodDuoNull(i))//(God.Duos[i] != null)
+                if (God.GodDuoNull(i))   //(God.Duos[i] != null)
                 {
                     //stringsList1.Add(God.Name + " - " + itGod.Name);
                     stringsList1.AddRange(ComboSkills(inp, God, i, itGod));

@@ -64,6 +64,13 @@
             this.DuoLegChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.txtBoxPrereq = new System.Windows.Forms.TextBox();
             this.grpBoxPrereq = new System.Windows.Forms.GroupBox();
+            this.textBoxLeg1 = new System.Windows.Forms.TextBox();
+            this.textBoxLeg2 = new System.Windows.Forms.TextBox();
+            this.textBoxLeg3 = new System.Windows.Forms.TextBox();
+            this.textBoxLeg4 = new System.Windows.Forms.TextBox();
+            this.textBoxLeg5 = new System.Windows.Forms.TextBox();
+            this.textBoxLeg6 = new System.Windows.Forms.TextBox();
+            this.textBoxLeg7 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.smallpBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.smallpBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.smallpBox5)).BeginInit();
@@ -91,7 +98,7 @@
             this.txtBox1.Multiline = true;
             this.txtBox1.Name = "txtBox1";
             this.txtBox1.ReadOnly = true;
-            this.txtBox1.Size = new System.Drawing.Size(318, 97);
+            this.txtBox1.Size = new System.Drawing.Size(129, 97);
             this.txtBox1.TabIndex = 0;
             this.txtBox1.UseWaitCursor = true;
             // 
@@ -279,7 +286,7 @@
             this.txtBox2.Multiline = true;
             this.txtBox2.Name = "txtBox2";
             this.txtBox2.ReadOnly = true;
-            this.txtBox2.Size = new System.Drawing.Size(318, 97);
+            this.txtBox2.Size = new System.Drawing.Size(129, 97);
             this.txtBox2.TabIndex = 17;
             this.txtBox2.UseWaitCursor = true;
             // 
@@ -291,7 +298,7 @@
             this.txtBox3.Multiline = true;
             this.txtBox3.Name = "txtBox3";
             this.txtBox3.ReadOnly = true;
-            this.txtBox3.Size = new System.Drawing.Size(318, 97);
+            this.txtBox3.Size = new System.Drawing.Size(129, 97);
             this.txtBox3.TabIndex = 18;
             this.txtBox3.UseWaitCursor = true;
             // 
@@ -303,7 +310,7 @@
             this.txtBox4.Multiline = true;
             this.txtBox4.Name = "txtBox4";
             this.txtBox4.ReadOnly = true;
-            this.txtBox4.Size = new System.Drawing.Size(318, 97);
+            this.txtBox4.Size = new System.Drawing.Size(129, 97);
             this.txtBox4.TabIndex = 19;
             this.txtBox4.UseWaitCursor = true;
             // 
@@ -315,7 +322,7 @@
             this.txtBox5.Multiline = true;
             this.txtBox5.Name = "txtBox5";
             this.txtBox5.ReadOnly = true;
-            this.txtBox5.Size = new System.Drawing.Size(318, 97);
+            this.txtBox5.Size = new System.Drawing.Size(129, 97);
             this.txtBox5.TabIndex = 20;
             this.txtBox5.UseWaitCursor = true;
             // 
@@ -327,7 +334,7 @@
             this.txtBox6.Multiline = true;
             this.txtBox6.Name = "txtBox6";
             this.txtBox6.ReadOnly = true;
-            this.txtBox6.Size = new System.Drawing.Size(318, 97);
+            this.txtBox6.Size = new System.Drawing.Size(129, 97);
             this.txtBox6.TabIndex = 21;
             this.txtBox6.UseWaitCursor = true;
             // 
@@ -339,12 +346,13 @@
             this.txtBox7.Multiline = true;
             this.txtBox7.Name = "txtBox7";
             this.txtBox7.ReadOnly = true;
-            this.txtBox7.Size = new System.Drawing.Size(318, 97);
+            this.txtBox7.Size = new System.Drawing.Size(129, 97);
             this.txtBox7.TabIndex = 22;
             this.txtBox7.UseWaitCursor = true;
             // 
             // grpBox1
             // 
+            this.grpBox1.Controls.Add(this.textBoxLeg1);
             this.grpBox1.Controls.Add(this.txtBox1);
             this.grpBox1.Controls.Add(this.smallpBox1);
             this.grpBox1.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -357,6 +365,7 @@
             // 
             // grpBox2
             // 
+            this.grpBox2.Controls.Add(this.textBoxLeg2);
             this.grpBox2.Controls.Add(this.txtBox2);
             this.grpBox2.Controls.Add(this.smallpBox2);
             this.grpBox2.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -369,6 +378,7 @@
             // 
             // grpBox3
             // 
+            this.grpBox3.Controls.Add(this.textBoxLeg3);
             this.grpBox3.Controls.Add(this.txtBox3);
             this.grpBox3.Controls.Add(this.smallpBox3);
             this.grpBox3.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -381,6 +391,7 @@
             // 
             // grpBox4
             // 
+            this.grpBox4.Controls.Add(this.textBoxLeg4);
             this.grpBox4.Controls.Add(this.txtBox4);
             this.grpBox4.Controls.Add(this.smallpBox4);
             this.grpBox4.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -393,6 +404,7 @@
             // 
             // grpBox5
             // 
+            this.grpBox5.Controls.Add(this.textBoxLeg5);
             this.grpBox5.Controls.Add(this.txtBox5);
             this.grpBox5.Controls.Add(this.smallpBox5);
             this.grpBox5.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -405,6 +417,7 @@
             // 
             // grpBox6
             // 
+            this.grpBox6.Controls.Add(this.textBoxLeg6);
             this.grpBox6.Controls.Add(this.txtBox6);
             this.grpBox6.Controls.Add(this.smallpBox6);
             this.grpBox6.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -417,6 +430,7 @@
             // 
             // grpBox7
             // 
+            this.grpBox7.Controls.Add(this.textBoxLeg7);
             this.grpBox7.Controls.Add(this.txtBox7);
             this.grpBox7.Controls.Add(this.smallpBox7);
             this.grpBox7.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -477,6 +491,90 @@
             this.grpBoxPrereq.TabIndex = 32;
             this.grpBoxPrereq.TabStop = false;
             this.grpBoxPrereq.Text = "Prerequisite Skills";
+            // 
+            // textBoxLeg1
+            // 
+            this.textBoxLeg1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxLeg1.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLeg1.Location = new System.Drawing.Point(141, 16);
+            this.textBoxLeg1.Multiline = true;
+            this.textBoxLeg1.Name = "textBoxLeg1";
+            this.textBoxLeg1.ReadOnly = true;
+            this.textBoxLeg1.Size = new System.Drawing.Size(183, 97);
+            this.textBoxLeg1.TabIndex = 11;
+            this.textBoxLeg1.UseWaitCursor = true;
+            // 
+            // textBoxLeg2
+            // 
+            this.textBoxLeg2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxLeg2.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLeg2.Location = new System.Drawing.Point(141, 16);
+            this.textBoxLeg2.Multiline = true;
+            this.textBoxLeg2.Name = "textBoxLeg2";
+            this.textBoxLeg2.ReadOnly = true;
+            this.textBoxLeg2.Size = new System.Drawing.Size(183, 97);
+            this.textBoxLeg2.TabIndex = 12;
+            this.textBoxLeg2.UseWaitCursor = true;
+            // 
+            // textBoxLeg3
+            // 
+            this.textBoxLeg3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxLeg3.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLeg3.Location = new System.Drawing.Point(141, 16);
+            this.textBoxLeg3.Multiline = true;
+            this.textBoxLeg3.Name = "textBoxLeg3";
+            this.textBoxLeg3.ReadOnly = true;
+            this.textBoxLeg3.Size = new System.Drawing.Size(183, 97);
+            this.textBoxLeg3.TabIndex = 18;
+            this.textBoxLeg3.UseWaitCursor = true;
+            // 
+            // textBoxLeg4
+            // 
+            this.textBoxLeg4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxLeg4.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLeg4.Location = new System.Drawing.Point(141, 16);
+            this.textBoxLeg4.Multiline = true;
+            this.textBoxLeg4.Name = "textBoxLeg4";
+            this.textBoxLeg4.ReadOnly = true;
+            this.textBoxLeg4.Size = new System.Drawing.Size(183, 97);
+            this.textBoxLeg4.TabIndex = 20;
+            this.textBoxLeg4.UseWaitCursor = true;
+            // 
+            // textBoxLeg5
+            // 
+            this.textBoxLeg5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxLeg5.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLeg5.Location = new System.Drawing.Point(141, 16);
+            this.textBoxLeg5.Multiline = true;
+            this.textBoxLeg5.Name = "textBoxLeg5";
+            this.textBoxLeg5.ReadOnly = true;
+            this.textBoxLeg5.Size = new System.Drawing.Size(183, 97);
+            this.textBoxLeg5.TabIndex = 21;
+            this.textBoxLeg5.UseWaitCursor = true;
+            // 
+            // textBoxLeg6
+            // 
+            this.textBoxLeg6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxLeg6.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLeg6.Location = new System.Drawing.Point(141, 16);
+            this.textBoxLeg6.Multiline = true;
+            this.textBoxLeg6.Name = "textBoxLeg6";
+            this.textBoxLeg6.ReadOnly = true;
+            this.textBoxLeg6.Size = new System.Drawing.Size(183, 97);
+            this.textBoxLeg6.TabIndex = 22;
+            this.textBoxLeg6.UseWaitCursor = true;
+            // 
+            // textBoxLeg7
+            // 
+            this.textBoxLeg7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxLeg7.Font = new System.Drawing.Font("Aileron", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLeg7.Location = new System.Drawing.Point(141, 16);
+            this.textBoxLeg7.Multiline = true;
+            this.textBoxLeg7.Name = "textBoxLeg7";
+            this.textBoxLeg7.ReadOnly = true;
+            this.textBoxLeg7.Size = new System.Drawing.Size(183, 97);
+            this.textBoxLeg7.TabIndex = 23;
+            this.textBoxLeg7.UseWaitCursor = true;
             // 
             // Form1
             // 
@@ -570,6 +668,13 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart DuoLegChart;
         private System.Windows.Forms.TextBox txtBoxPrereq;
         private System.Windows.Forms.GroupBox grpBoxPrereq;
+        private System.Windows.Forms.TextBox textBoxLeg1;
+        private System.Windows.Forms.TextBox textBoxLeg2;
+        private System.Windows.Forms.TextBox textBoxLeg3;
+        private System.Windows.Forms.TextBox textBoxLeg4;
+        private System.Windows.Forms.TextBox textBoxLeg5;
+        private System.Windows.Forms.TextBox textBoxLeg6;
+        private System.Windows.Forms.TextBox textBoxLeg7;
     }
 }
 

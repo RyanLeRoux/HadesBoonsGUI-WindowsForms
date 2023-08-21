@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +46,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>HadesIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -95,12 +113,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="images\Poseidon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\Zeus.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Aphrodite.png" />
   </ItemGroup>
   <ItemGroup>
@@ -131,13 +143,77 @@
     <None Include="Resources\Aphrodite_symbol.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HadesIcon.ico" />
+    <None Include="Resources\Zeus_Wraith.png" />
+    <None Include="Resources\Aphrodite_Attack.png" />
+    <None Include="Resources\Aphrodite_Cast.png" />
+    <None Include="Resources\Aphrodite_Dash.png" />
+    <None Include="Resources\Aphrodite_Special.png" />
+    <None Include="Resources\Aphrodite_Wraith.png" />
+    <None Include="Resources\Ares_Attack.png" />
+    <None Include="Resources\Ares_Cast.png" />
+    <None Include="Resources\Ares_Dash.png" />
+    <None Include="Resources\Ares_Revenge.png" />
+    <None Include="Resources\Ares_Special.png" />
+    <None Include="Resources\Aphrodite_Revenge.png" />
     <Content Include="Resources\Ares_symbol.png" />
+    <None Include="Resources\Ares_Wraith.png" />
+    <None Include="Resources\Artemis_Attack.png" />
+    <None Include="Resources\Artemis_Cast.png" />
+    <None Include="Resources\Artemis_Dash.png" />
+    <None Include="Resources\Artemis_Special.png" />
     <Content Include="Resources\Artemis_symbol.png" />
+    <None Include="Resources\Artemis_Wraith.png" />
+    <None Include="Resources\Athena_Attack.png" />
+    <None Include="Resources\Athena_Cast.png" />
+    <None Include="Resources\Athena_Dash.png" />
+    <None Include="Resources\Athena_Revenge.png" />
+    <None Include="Resources\Athena_Special.png" />
     <Content Include="Resources\Athena_symbol.png" />
+    <None Include="Resources\Athena_Wraith.png" />
+    <None Include="Resources\Demeter_Dash.png" />
+    <None Include="Resources\Demeter_Revenge.png" />
+    <None Include="Resources\Demeter_Special.png" />
+    <None Include="Resources\Demeter_Attack.png" />
+    <None Include="Resources\Demeter_Cast.png" />
     <Content Include="Resources\Demeter_symbol.png" />
+    <None Include="Resources\Demeter_Wraith.png" />
+    <None Include="Resources\Dionysus_Attack.png" />
+    <None Include="Resources\Dionysus_Cast.png" />
+    <None Include="Resources\Dionysus_Dash.png" />
+    <None Include="Resources\Dionysus_Special.png" />
     <Content Include="Resources\Dionysus_symbol.png" />
+    <None Include="Resources\Icon.bmp" />
+    <None Include="Resources\Icon.ico" />
+    <None Include="Resources\HadesIcon.ico" />
+    <None Include="Resources\Dionysus_Wraith.png" />
+    <None Include="Resources\Poseidon_Attack.png" />
+    <None Include="Resources\Poseidon_Cast.png" />
+    <None Include="Resources\Poseidon_Dash.png" />
+    <None Include="Resources\Poseidon_Special.png" />
     <Content Include="Resources\Poseidon_symbol.png" />
+    <None Include="Resources\Poseidon_Wraith.png" />
+    <None Include="Resources\Zeus_Attack.png" />
+    <None Include="Resources\Zeus_Cast.png" />
+    <None Include="Resources\Zeus_Dash.png" />
+    <None Include="Resources\Zeus_Revenge.png" />
+    <None Include="Resources\Zeus_Special.png" />
     <Content Include="Resources\Zeus_symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

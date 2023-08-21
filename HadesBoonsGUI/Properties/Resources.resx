@@ -169,4 +169,142 @@
   <data name="Zeus_symbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Zeus_symbol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="HadesIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HadesIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aphrodite_Attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aphrodite_Attack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aphrodite_Cast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aphrodite_Cast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aphrodite_Dash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aphrodite_Dash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aphrodite_Revenge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aphrodite_Revenge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aphrodite_Special" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aphrodite_Special.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aphrodite_Wraith" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aphrodite_Wraith.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ares_Attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ares_Attack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ares_Cast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ares_Cast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ares_Dash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ares_Dash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ares_Revenge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ares_Revenge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ares_Special" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ares_Special.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ares_Wraith" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ares_Wraith.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Artemis_Attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Artemis_Attack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Artemis_Cast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Artemis_Cast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Artemis_Dash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Artemis_Dash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Artemis_Special" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Artemis_Special.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Artemis_Wraith" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Artemis_Wraith.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Athena_Attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Athena_Attack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Athena_Cast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Athena_Cast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Athena_Dash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Athena_Dash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Athena_Revenge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Athena_Revenge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Athena_Special" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Athena_Special.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Athena_Wraith" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Athena_Wraith.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Demeter_Attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Demeter_Attack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Demeter_Cast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Demeter_Cast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Demeter_Dash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Demeter_Dash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Demeter_Revenge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Demeter_Revenge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Demeter_Special" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Demeter_Special.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Demeter_Wraith" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Demeter_Wraith.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dionysus_Attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dionysus_Attack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dionysus_Cast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dionysus_Cast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dionysus_Dash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dionysus_Dash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dionysus_Special" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dionysus_Special.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dionysus_Wraith" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dionysus_Wraith.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Poseidon_Attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Poseidon_Attack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Poseidon_Cast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Poseidon_Cast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Poseidon_Dash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Poseidon_Dash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Poseidon_Special" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Poseidon_Special.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Poseidon_Wraith" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Poseidon_Wraith.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zeus_Attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zeus_Attack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zeus_Cast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zeus_Cast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zeus_Dash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zeus_Dash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zeus_Revenge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zeus_Revenge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zeus_Special" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zeus_Special.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zeus_Wraith" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zeus_Wraith.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
